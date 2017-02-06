@@ -36,8 +36,8 @@ a {
 }
 
 #about {
-  background-image: url("https://static.pexels.com/photos/6603/landmark-bridge-cliff-california.jpeg");
-  background-image: url("https://static.pexels.com/photos/6603/landmark-bridge-cliff-california.jpeg"),
+  background-image: url("../img/goldengate.jpeg");
+  background-image: url("../img/goldengate.jpeg"),
   linear-gradient(rgba(0, 0, 0, 0.1),
   rgba(0, 0, 0, 0.1));
   background-position: center center;
