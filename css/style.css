@@ -1,0 +1,92 @@
+body {
+  padding-top: 50px;
+  background-color: #E2DFD0;
+}
+
+.anchor {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+#myNavbar {
+  margin: 0;
+  padding: 7.5px 15px;
+}
+
+.navbar-custom {
+  padding: 0
+}
+
+.navbar-brand {
+  margin-top: 7.5px;
+}
+
+.brand-custom .navbar-brand {
+  color: #D3D3D3;
+}
+
+.main-holder, .container {
+  min-width: 50%;
+  padding: 0;
+}
+
+#about {
+  background-image: url("https://static.pexels.com/photos/6603/landmark-bridge-cliff-california.jpeg");
+  background-image: url("https://static.pexels.com/photos/6603/landmark-bridge-cliff-california.jpeg"),
+  linear-gradient(rgba(0, 0, 0, 0.1),
+  rgba(0, 0, 0, 0.1));
+  background-position: center center;
+  background-size: cover;
+  color: #E8E8E8;
+  height: 100vh;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.intro {
+  margin-top: 15%;
+  font-size: 2em;
+  padding: 25%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.portrait {
+  min-width: 100px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+#portfolio h2 {
+  padding-bottom: 40px;
+}
+
+.examples div img {
+  margin-bottom: 20px;
+}
+
+#portfolio {
+  color: #FFFFFF;
+  background-color: #212224;
+  padding-bottom: 10%;
+}
+
+.row {
+   margin-left: 0;
+  margin-right: 0;
+}
+
+#contact {
+  color: #33333;
+  background-color: #FFFFFF;
+  padding-bottom: 70px;
+}
+
+.social i {
+  color: black;
+  font-size: 2em;
+}
+
+.footer {
+  color: #B5B5B5;
+  margin: 20px 0;
+}
