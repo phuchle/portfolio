@@ -6,46 +6,48 @@
     <title>Phuc Le - A Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <nav class="navbar navbar-custom navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- toggle button -->
-      <div class="brand-custom">
-      <a class="navbar-brand" href="#">Phuc Le</a>
-      </div>
-    </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- toggle button -->
+          <div class="brand-custom">
+          <a class="navbar-brand" href="#">Phuc Le</a>
+          </div>
+        </div>
 
-    <!--  Collect items for collapse    -->
-    <div class="collapse navbar-collapse navbar-right anchor" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <!-- collapse nav -->
-  </div>
-  <!-- containernavbar -->
-</nav>
+        <!--  Collect items for collapse    -->
+        <div class="collapse navbar-collapse navbar-right anchor" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- collapse nav -->
+      </div>
+      <!-- container navbar -->
+    </nav>
 
 
 <div class="container main-holder">
   <div class="anchor" id="about">
     <div class="row intro text-center">
       <div class="col-md-12">
-        <p>Hello! My name is Phuc.</p>
-        <p>I am a web developer with a passion for intuitive and elegant engineering.</p>
+        <h1>Hello! My name is Phuc.</h1>
+        <h2>I am a web developer with a passion for intuitive and elegant engineering.</h2>
       </div>
       <div class="col-md-12">
         <hr>
@@ -56,24 +58,35 @@
   <div class="text-center anchor" id="portfolio">
     <h2>Portfolio</h2>
     <div class="row examples">
+
       <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
+        <div class="thumbnail text-left center-block">
+          <a href="http://www.iotaphi.org">
+            <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
+          </a>
+          <div class="caption">
+            <h3>Iota Phi Remodel</h3>
+            <p>
+             I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap and SASS, Javascript, JQuery, PHP5, and mySQL.
+            </p>
+          </div>
+        </div>
       </div>
+
       <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
+        <div class="thumbnail text-left center-block">
+          <a href="http://codepen.io/phvc/full/YNVgzP/">
+            <img class="img-responsive" src="img/quote_machine.png">
+          </a>
+          <div class="caption">
+            <h3>Random Quote Machine</h3>
+            <p>
+              This app retrieves a random quote from the QuotesDesign API and displays it for the user.  This quote can be Tweeted out to the user's timeline.  I used HTML/CSS and jQuery to dynamically retrieve the quote information and create the tweet-able text.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive center-block" src="http://scr2.templatemonster.com/400x400/53300/53370-original.jpg">
-      </div>
+
     </div>
   </div>
   <div class="anchor text-center" id="contact">
@@ -81,7 +94,7 @@
     <p>I would love to chat via e-mail</a> or social media.</p>
 
     <div class="social">
-      <a href="mailto:le.phuc.h@gmail.com"><i class="glyphicon-envelope"></i></a>
+      <a href="mailto:le.phuc.h@gmail.com" alt="Email"><i class="fa fa-envelope"></i></a>
       <a href="https://github.com/phuchle" alt="Github"><i class="fa fa-github"></i></a>
       <a href="https://www.linkedin.com/in/phuc-le-a0381b93" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
     </div>
@@ -91,7 +104,7 @@
 </div>
 <!-- main -->
 
-<div class="footer text-center container-fluid">
+<div id="footer" class="text-center container-fluid">
   <p> © Phuc Le 2016</p>
 </div>
   </body>

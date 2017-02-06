@@ -1,11 +1,15 @@
 body {
-  padding-top: 50px;
+  padding-top: 65px;
   background-color: #E2DFD0;
 }
 
+a {
+  transition: .3s ease;
+}
+
 .anchor {
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 65px;
+  /*margin-top: -50px;*/
 }
 
 #myNavbar {
@@ -22,7 +26,8 @@ body {
 }
 
 .brand-custom .navbar-brand {
-  color: #D3D3D3;
+  color: #ca4817;
+  font-weight: 900;
 }
 
 .main-holder, .container {
@@ -44,10 +49,7 @@ body {
 
 .intro {
   margin-top: 15%;
-  font-size: 2em;
-  padding: 25%;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .portrait {
@@ -57,7 +59,7 @@ body {
 }
 
 #portfolio h2 {
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .examples div img {
@@ -68,6 +70,10 @@ body {
   color: #FFFFFF;
   background-color: #212224;
   padding-bottom: 10%;
+}
+
+#portfolio .thumbnail {
+  width: 400px;
 }
 
 .row {
@@ -81,12 +87,21 @@ body {
   padding-bottom: 70px;
 }
 
+#contact h2 {
+  color: #61bdd4;
+}
+
 .social i {
   color: black;
   font-size: 2em;
 }
 
-.footer {
+#footer {
   color: #B5B5B5;
-  margin: 20px 0;
+  background-color: #212224;
+  padding: 15px 0;
+}
+
+#footer p {
+  padding: 0;
 }
