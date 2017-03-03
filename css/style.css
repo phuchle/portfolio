@@ -41,6 +41,7 @@ a {
   linear-gradient(rgba(0, 0, 0, 0.1),
   rgba(0, 0, 0, 0.1));
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   color: #E8E8E8;
   height: 100vh;
@@ -60,6 +61,14 @@ a {
 
 #portfolio h2 {
   padding-bottom: 100px;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .examples div img {
