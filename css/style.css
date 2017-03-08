@@ -67,7 +67,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -82,7 +82,7 @@ a {
 }
 
 #portfolio .thumbnail {
-  width: 400px;
+  max-width: 400px;
 }
 
 .row {
