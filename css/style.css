@@ -1,6 +1,5 @@
 body {
   text-rendering: optimizeLegibility;
-  padding-top: 65px;
   background-color: #E2DFD0;
 }
 
@@ -100,6 +99,8 @@ a {
   color: #33333;
   background-color: #FFFFFF;
   padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #contact h2 {
