@@ -1,4 +1,5 @@
 body {
+  text-rendering: optimizeLegibility;
   padding-top: 65px;
   background-color: #E2DFD0;
 }
@@ -8,8 +9,7 @@ a {
 }
 
 .anchor {
-  padding-top: 65px;
-  margin-top: -10px;
+  padding-top: 70px;
 }
 
 #myNavbar {
@@ -36,8 +36,8 @@ a {
 }
 
 #about {
-  background-image: url("../img/goldengate.jpeg");
-  background-image: url("../img/goldengate.jpeg"),
+  background-image: url("../img/goldengate.jpg");
+  background-image: url("../img/goldengate.jpg"),
   linear-gradient(rgba(0, 0, 0, 0.1),
   rgba(0, 0, 0, 0.1));
   background-position: center center;
@@ -53,23 +53,6 @@ a {
   padding: 0;
 }
 
-.portrait {
-  min-width: 100px;
-  max-width: 150px;
-  border-radius: 50%;
-}
-
-#portfolio h2 {
-  padding-bottom: 100px;
-}
-
-.examples {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .examples div img {
   margin-bottom: 20px;
@@ -79,10 +62,33 @@ a {
   color: #FFFFFF;
   background-color: #212224;
   padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio h2 {
+  padding-bottom: 100px;
 }
 
 #portfolio .thumbnail {
   max-width: 400px;
+}
+
+.portrait {
+  min-width: 100px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
 }
 
 .row {
