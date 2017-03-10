@@ -73,6 +73,7 @@ a {
 
 #portfolio .thumbnail {
   max-width: 400px;
+  margin-bottom: 60px;
 }
 
 .portrait {
