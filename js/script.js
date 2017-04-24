@@ -26,9 +26,9 @@ $(document).ready(function() {
     } // End if
   });
 
-  $(function(){
+  $(function() {
     $('.nav a').on('click', function(){
-      if ($('.navbar-toggle').css('display') != 'none'){
+      if ($('.navbar-toggle').css('display') != 'none') {
         $(".navbar-toggle").trigger("click");
       }
     });

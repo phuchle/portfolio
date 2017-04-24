@@ -45,7 +45,7 @@
 <div class="main-holder">
   <div class="anchor" id="about">
     <div class="row intro text-center">
-      <div class="col-md-12">
+      <div class="col-md-12" id="intro-text">
         <h1>Hello! My name is Phuc.</h1>
         <h2>I am a web developer with a passion for intuitive and elegant engineering.</h2>
       </div>
@@ -60,7 +60,7 @@
     <h2>Portfolio</h2>
     <div class="row examples">
       <!-- Iota Phi -->
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="thumbnail text-left center-block">
           <a href="http://www.iotaphi.org">
             <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
@@ -74,7 +74,21 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-5">
+        <div class="thumbnail text-left center-block">
+          <a href="https://phuchle.github.io/js-tictactoe/">
+            <img class="img-responsive" src="img/tictactoe.png">
+          </a>
+          <div class="caption">
+            <h3>Smart Tictactoe</h3>
+            <p>
+              This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
         <div class="thumbnail text-left center-block">
           <a href="https://phuchle.github.io/js-pomodoro/">
             <img class="img-responsive" src="img/pomodoro.png">
@@ -88,7 +102,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="thumbnail text-left center-block">
           <a href="https://phuchle.github.io/JS-Calculator/">
             <img class="img-responsive" src="img/calculator.png">
@@ -102,7 +116,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="thumbnail text-left center-block">
           <a href="https://phuchle.github.io/wiki-viewer/">
             <img class="img-responsive" src="img/wikipedia_viewer.png">
@@ -116,7 +130,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="thumbnail text-left center-block">
           <a href="https://phuchle.github.io/twitch-user-status/">
             <img class="img-responsive" src="img/twitch_status.png">
@@ -125,23 +139,6 @@
             <h3>Which Twitch?</h3>
             <p>
               Users can view the status of Twitch streamers with this app and filter between online and offline users.  The Twitch API recently changed, and I had to use a proxy API in order to create this app.  I continued to use flexbox to align this page and CSS transitions along with jQuery in order to create the filtering functionality.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="thumbnail text-left center-block">
-          <a href="https://codepen.io/phvc/pen/PWerOE">
-            <img class="img-responsive" src="img/local_weather.png">
-          </a>
-          <div class="caption">
-            <h3>Lowdown on Local Weather</h3>
-            <p>
-              I used the Weather Underground API and the user location to display local temperature and weather conditions within the city.  I used minimal jQuery in order to gain practice with pure JS selectors.
-            </p>
-            <p>
-              While building the functions to show the weather, I learned more about how asynchronous JavaScript loads, since at one point my code was returning undefined for the temperature.  The rest of the JavaScript had already loaded before my API call returned a value, so I had to restructure my code to run only after the asynchronous portion of the code was finished.
             </p>
           </div>
         </div>
