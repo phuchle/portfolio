@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phuc Le - A Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -42,127 +39,149 @@
     </nav>
 
 
-<div class="main-holder">
-  <div class="anchor" id="about">
-    <div class="row intro text-center">
-      <div class="col-md-12" id="intro-text">
-        <h1>Hello! My name is Phuc.</h1>
-        <h2>I am a web developer with a passion for intuitive and elegant engineering.</h2>
+    <div class="main-holder">
+      <div class="anchor" id="about">
+        <div class="row intro text-center">
+          <div class="col-md-12" id="intro-text">
+            <h1>Hello! My name is Phuc.</h1>
+            <h2>I am a web developer with a passion for intuitive and elegant engineering.</h2>
+          </div>
+          <div class="col-md-12">
+            <hr>
+            <img class="img-responsive center-block portrait" src="img/me.jpg">
+          </div>
+        </div>
       </div>
-      <div class="col-md-12">
-        <hr>
-        <img class="img-responsive center-block portrait" src="img/me.jpg">
+
+      <div class="text-center anchor" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="row examples">
+          <!-- Iota Phi -->
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="http://www.iotaphi.org" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>Iota Phi Renovation</h3>
+                <p>
+                 I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap, Sass, Javascript, JQuery, PHP, and mySQL.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="http://dealer-bernice-71173.netlify.com/" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/local_weather.png">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>What's the weather?</h3>
+                <p>
+                  Built with React and React Router, this weather single page application allows the user to enter a location and receive a five day forecast.  The location input field is a controlled component, wherein typing text into the field will cause a function to update the state.  On pressing the 'Get Weather' button, this state is then used to make an API call for the weather information.  The returning JSON string is parsed to display the relevant weather information and icons.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="https://camper-leaderboard.firebaseapp.com/" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/leaderboard.png">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>Leaderboard</h3>
+                <p>
+                  This app shows top scoring users from freecodecamp.com, an open source online web development course.  The users can be sorted by their all time points or their recent points (past 30 days). The API call is made with axios and then parsed into rows. The sort toggling is handled by the table headers, which call functions to render the corresponding data.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="https://markdown-previewer-c587e.firebaseapp.com/" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/markdown_previewer.png">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>Markdown Previewer</h3>
+                <p>
+                  This application takes in Github-flavored markdown and uses a 3rd party library to interepret it in real-time.  The input and output fields are encapsulated by a parent component, referred to as App. Since the input field is a controlled component and the output needs to be able to interpret the markdown coming it, these two components share a common state, leading me to uplift the state and store it in their parent component--App.  The result is the input field can seamlessly update the output field.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="https://phuchle.github.io/simon-game/" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/simon.png">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>Simon</h3>
+                <p>
+                  Simon is a game where a pattern plays and the player has to enter the same pattern.  One additional color/sound combination is added to this pattern.  If a player can get to 20, they will win!  Strict mode forces the player to start over at 1 if they make a mistake entering the pattern.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="thumbnail text-left center-block">
+              <a href="https://phuchle.github.io/js-tictactoe/" target="_blank">
+                <figure>
+                  <img class="img-responsive" src="img/tictactoe.png">
+                </figure>
+              </a>
+              <div class="caption">
+                <h3>Smart Tictactoe</h3>
+                <p>
+                  This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+      
+      <div class="anchor text-center" id="contact">
+        <h2>Contact Me</h2>
+        <p>I am actively seeking employment and would love to chat via e-mail or social media.</p>
+
+        <div class="social">
+          <a href="mailto:le.phuc.h@gmail.com" alt="Email"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/phuchle" alt="Github"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/phuc-le-a0381b93" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+      </div>
+
+
     </div>
-  </div>
+    <!-- main -->
 
-  <div class="text-center anchor" id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="row examples">
-      <!-- Iota Phi -->
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="http://www.iotaphi.org">
-            <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
-          </a>
-          <div class="caption">
-            <h3>Iota Phi Renovation</h3>
-            <p>
-             I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap, SASS, Javascript, JQuery, PHP, and mySQL.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="http://dealer-bernice-71173.netlify.com/">
-            <img class="img-responsive" src="img/local_weather.png">
-          </a>
-          <div class="caption">
-            <h3>What's the weather?</h3>
-            <p>
-              Built with React and React Router, this weather single page application allows the user to enter a location and receive a five day forecast.  The location input field is a controlled component, wherein typing text into the field will cause a function to update the state.  On pressing the 'Get Weather' button, this state is then used to make an API call for the weather information.  The returning JSON string is parsed to display the relevant weather information and icons.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="https://markdown-previewer-c587e.firebaseapp.com/">
-            <img class="img-responsive" src="img/markdown_previewer.png">
-          </a>
-          <div class="caption">
-            <h3>Markdown Previewer</h3>
-            <p>
-              This application takes in Github-flavored markdown and uses a 3rd party library to interepret it in real-time.  The input and output fields are encapsulated by a parent component, referred to as App. Since the input field is a controlled component and the output needs to be able to interpret the markdown coming it, these two components share a common state, leading me to uplift the state and store it in their parent component--App.  The result is the input field can seamlessly update the output field.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="https://phuchle.github.io/simon-game/">
-            <img class="img-responsive" src="img/simon.png">
-          </a>
-          <div class="caption">
-            <h3>Simon</h3>
-            <p>
-              Simon is a game where a pattern plays and the player has to enter the same pattern.  One additional color/sound combination is added to this pattern.  If a player can get to 20, they will win!  Strict mode forces the player to start over at 1 if they make a mistake entering the pattern.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="https://phuchle.github.io/js-tictactoe/">
-            <img class="img-responsive" src="img/tictactoe.png">
-          </a>
-          <div class="caption">
-            <h3>Smart Tictactoe</h3>
-            <p>
-              This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="thumbnail text-left center-block">
-          <a href="https://phuchle.github.io/js-pomodoro/">
-            <img class="img-responsive" src="img/pomodoro.png">
-          </a>
-          <div class="caption">
-            <h3>Phuc's Pomodoro</h3>
-            <p>
-              The Pomodoro technique is a time management method, where work is broken down into 25 minute sessions separated by 5 minute breaks.  This app is a timer which allows the user to customize their work/break sessions and plays a chime at the beginning and end of each session.  The timer is a button which plays/pauses the session.
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <div id="footer" class="text-center container-fluid">
+      <p>
+        <a href="https://github.com/phuchle/portfolio" target="_blank">
+          Design and code
+        </a>
+        by Phuc Le
+      </p>
     </div>
-  </div>
-  <div class="anchor text-center" id="contact">
-    <h2>Contact Me</h2>
-    <p>I am actively seeking employment and would love to chat via e-mail or social media.</p>
 
-    <div class="social">
-      <a href="mailto:le.phuc.h@gmail.com" alt="Email"><i class="fa fa-envelope"></i></a>
-      <a href="https://github.com/phuchle" alt="Github"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/phuc-le-a0381b93" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-    </div>
-  </div>
-
-
-</div>
-<!-- main -->
-
-<div id="footer" class="text-center container-fluid">
-  <p>Design and code by Phuc Le</p>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

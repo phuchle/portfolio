@@ -64,8 +64,22 @@ hr {
   border: 0;
 }
 
-.examples div img {
+.examples img {
   margin-bottom: 20px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.examples img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: .7;
+}
+
+figure {
+  overflow: hidden;
 }
 
 #portfolio {
@@ -126,6 +140,11 @@ hr {
 .social i {
   color: black;
   font-size: 3em;
+  transition: .2s ease-in-out;
+}
+
+.social i:hover {
+  color: #ca4817;
 }
 
 #footer {
