@@ -64,7 +64,7 @@ hr {
   border: 0;
 }
 
-.examples img {
+.thumbnail img {
   margin-bottom: 20px;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -72,7 +72,7 @@ hr {
   transition: .2s ease-in-out;
 }
 
-.examples img:hover {
+.thumbnail img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   opacity: .7;
@@ -85,13 +85,9 @@ figure {
 #portfolio {
   color: #FFFFFF;
   background-color: #212224;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 10%;
-  display: ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #portfolio h2 {
@@ -99,7 +95,7 @@ figure {
 }
 
 #portfolio .thumbnail {
-  max-width: 400px;
+  max-width: 500px;
   margin-bottom: 60px;
 }
 
@@ -107,22 +103,6 @@ figure {
   min-width: 100px;
   max-width: 150px;
   border-radius: 50%;
-}
-
-.examples {
-  display: ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-}
-
-.row {
-   margin-left: 0;
-  margin-right: 0;
 }
 
 #contact {
