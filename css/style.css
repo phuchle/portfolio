@@ -166,6 +166,10 @@ a {
   color: #ca4817;
 }
 
+#email {
+  margin-bottom: 1rem;
+}
+
 #footer {
   color: #B5B5B5;
   background-color: #212224;
