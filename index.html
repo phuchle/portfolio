@@ -198,116 +198,78 @@
 
       <div class="container-fluid" id="portfolio">
         <h2 class="text-center">Portfolio</h2>
-        <p>
-          test
-        </p>
-        <!-- <div class="row text-center anchor" >
-          <div class="col">
-            <h2>Portfolio</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="thumbnail text-left center-block">
-                  <a href="http://www.iotaphi.org">
-                    <figure>
-                      <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
-                    </figure>
-                  </a>
-                  <div class="caption">
-                    <h3>Iota Phi Renovation</h3>
-                    <p>
-                      I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap, Sass, Javascript, JQuery, PHP, and mySQL.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="thumbnail text-left center-block">
-                  <a href="http://dealer-bernice-71173.netlify.com/">
-                    <figure>
-                      <img class="img-responsive" src="img/local_weather.png">
-                    </figure>
-                  </a>
-                  <div class="caption">
-                    <h3>What's the weather?</h3>
-                    <p>
-                      Built with React and React Router, this weather single page application allows the user to enter a location and receive a five day forecast.  The location input field is a controlled component, wherein typing text into the field will cause a function to update the state.  On pressing the 'Get Weather' button, this state is then used to make an API call for the weather information.  The returning JSON string is parsed to display the relevant weather information and icons.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="thumbnail text-left center-block">
-                  <a href="https://camper-leaderboard.firebaseapp.com/">
-                    <figure>
-                      <img class="img-responsive" src="img/leaderboard.png">
-                    </figure>
-                  </a>
-                  <div class="caption">
-                    <h3>Leaderboard</h3>
-                    <p>
-                      This app shows top scoring users from freecodecamp.com, an open source online web development course.  The users can be sorted by their all time points or their recent points (past 30 days). The API call is made with axios and then parsed into rows. The sort toggling is handled by the table headers, which call functions to render the corresponding data.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="thumbnail text-left center-block">
-                  <a href="https://recipeas-63c19.firebaseapp.com/">
-                    <figure>
-                      <img class="img-responsive" src="img/recipeas.png">
-                    </figure>
-                  </a>
-                  <div class="caption">
-                    <h3>Recipeas</h3>
-                    <p>
-                      Recipeas (pun intended) allows users to create, store, edit, and delete recipes without needing to connect to a server.  The application stores the data as a string in the browser's local storage.  Recipeas was created with Create-React-App and state is handled with Redux.  Upcoming features include a redesigned recipe creation flow and nutritional information for recipes.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="thumbnail text-left center-block">
-                    <a href="https://phuchle.github.io/simon-game/">
-                      <figure>
-                        <img class="img-responsive" src="img/simon.png">
-                      </figure>
-                    </a>
-                    <div class="caption">
-                      <h3>Simon</h3>
-                      <p>
-                        Simon is a game where a pattern plays and the player has to enter the same pattern.  One additional color/sound combination is added to this pattern.  If a player can get to 20, they will win!  Strict mode forces the player to start over at 1 if they make a mistake entering the pattern.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="thumbnail text-left center-block">
-                    <a href="https://phuchle.github.io/js-tictactoe/">
-                      <figure>
-                        <img class="img-responsive" src="img/tictactoe.png">
-                      </figure>
-                    </a>
-                    <div class="caption">
-                      <h3>Smart Tictactoe</h3>
-                      <p>
-                        This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://recipeas-63c19.firebaseapp.com/">
+              <img src="img/recipeas.png" alt="Recipes app" />
+            </a>
           </div>
-        </div> -->
+          <div class="col-md-8">
+            <h4>
+              Recipeas
+            </h4>
+            <p>
+              Recipeas (pun intended) allows users to create, store, edit, and delete recipes without needing to connect to a server.  The application stores the data as a string in the browser's local storage.  Recipeas was created with Create-React-App and state is handled with Redux.  Upcoming features include a redesigned recipe creation flow and nutritional information for recipes.
+            </p>
+            <p>
+              <a href="https://recipeas-63c19.firebaseapp.com/">
+                Live
+              </a>
+              |
+              <a href="https://github.com/phuchle/recipeas">
+                Code
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="project-header">
+              Leaderboard
+            </h4>
+            <p>
+              This app shows top scoring users from freecodecamp.com, an open source online web development course.  The users can be sorted by their all time points or their recent points (past 30 days). The API call is made with axios and then parsed into rows. The sort toggling is handled by the table headers, which call functions to render the corresponding data.
+            </p>
+            <p>
+              <a href="https://camper-leaderboard.firebaseapp.com/">
+                Live
+              </a>
+              |
+              <a href="https://github.com/phuchle/camper-leaderboard">
+                Code
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://camper-leaderboard.firebaseapp.com/">
+              <img src="img/leaderboard.png" alt="Leaderboard app" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://phuchle.github.io/js-tictactoe/">
+              <img src="img/tictactoe.png" alt="Tic-tac-toe app" />
+            </a>
+          </div>
+          <div class="col-md-8">
+            <h4>
+              Unbeatable Tic-Tac-Toe
+            </h4>
+            <p>
+              This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
+            </p>
+            <p>
+              <a href="https://phuchle.github.io/js-tictactoe/">
+                Live
+              </a>
+              |
+              <a href="https://github.com/phuchle/js-tictactoe">
+                Code
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="text-center" id="contact">
@@ -315,10 +277,20 @@
         <p>I am actively seeking employment and would love to chat via e-mail or social media.</p>
 
         <div class="social">
-          <a href="mailto:le.phuc.h@gmail.com" alt="Email"><i class="fa fa-envelope"></i></a>
           <a href="https://github.com/phuchle" alt="Github"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/phuc-le-a0381b93" alt="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
         </div>
+
+        <form id="mailForm" action="https://formspree.io/le.phuc.h@gmail.com" method="POST">
+          <div class="col-md-6 offset-md-3 form-group text-left">
+            <label for="email">Your email:</label>
+            <input id="email" class="form-control" name="email" type="email" />
+
+            <label for="message">Your message:</label>
+            <textarea id="message" class="form-control" name="message"></textarea>
+          </div>
+          <button class="btn btn-lg btn-primary" type="submit">Send</button>
+        </form>
       </div>
 
     <!-- main -->
