@@ -111,6 +111,10 @@ figure {
   list-style-type: none;
 }
 
+.work-history .experience {
+  color: #ca4817;
+}
+
 #portfolio {
   padding-top: 5rem;
   background-color: #272727;
