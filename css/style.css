@@ -134,7 +134,8 @@ a {
 }
 
 #portfolio img {
-  max-height: 300px;
+  height: auto;
+  width: 100%;
   margin-bottom: 20px;
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
