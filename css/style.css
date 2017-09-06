@@ -61,6 +61,17 @@ a {
   bottom: 2rem;
 }
 
+.see-work a {
+  color: #61bdd4;
+}
+
+.see-work i:hover::before {
+  color: #0275d8;
+  border: 3px solid #0275d8;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}
+
 #about {
   padding-top: 5rem;
   max-height: 100%;
