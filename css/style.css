@@ -1,67 +1,60 @@
 body {
+  position: relative;
   text-rendering: optimizeLegibility;
-  background-color: #E2DFD0;
+  color: #2b2d2d;
+  font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 a {
   transition: .3s ease;
 }
 
-.anchor {
-  padding-top: 70px;
-}
-
-#myNavbar {
-  margin: 0;
-  padding: 7.5px 15px;
-}
-
-.navbar-custom {
-  padding: 0
-}
-
 .navbar-brand {
-  margin-top: 7.5px;
+  width: auto;
 }
 
-.brand-custom .navbar-brand {
-  color: #ca4817;
-  font-weight: 900;
+.navbar-inverse .bg-inverse {
+  background: rgba(0,0,0,0.4);
 }
 
-.main-holder, .container {
-  min-width: 50%;
-  padding: 0;
-}
-
-#about {
-  background-image: url("../img/goldengate.jpg");
-  background-image: url("../img/goldengate.jpg"),
-  linear-gradient(rgba(0, 0, 0, 0.1),
-  rgba(0, 0, 0, 0.1));
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #FFFFFF;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
   height: 100vh;
 }
 
-#intro-text {
-  background-color: #000000;
-  opacity: .8;
-  padding-bottom: 10px;
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: " ";
+  background-image: url("../img/wood-min.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .intro {
-  margin-top: 15%;
-  padding: 0;
+  align-self: center;
 }
 
-hr {
-  height: 3px;
-  color: #000000;
-  background-color: #000000;
-  border: 0;
+.see-work {
+  position: absolute;
+  bottom: 2rem;
 }
 
 .thumbnail img {
@@ -82,12 +75,50 @@ figure {
   overflow: hidden;
 }
 
+#about {
+  padding-top: 5rem;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-bottom: 5rem;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#skillset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+}
+
+#skillset > i {
+  color: #ca4817;
+}
+
+#skillset > i:hover {
+  color: #61bdd4;
+  transition: .2s ease-in-out;
+}
+
+.work-history {
+  padding: 0;
+}
+
+.work-history > li {
+  list-style-type: none;
+}
+
 #portfolio {
-  color: #FFFFFF;
-  background-color: #212224;
+  padding-top: 5rem;
+  background-color: #272727;
+  color: #f2f2f2;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 10%;
+  min-height: 100vh;
 }
 
 #portfolio h2 {
@@ -100,20 +131,21 @@ figure {
 }
 
 .portrait {
-  min-width: 100px;
-  max-width: 150px;
+  max-width: 30px;
   border-radius: 50%;
 }
 
 #contact {
+  padding-top: 5rem;
   color: #33333;
   background-color: #FFFFFF;
   padding-bottom: 70px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 100vh;
 }
 
-#contact h2 {
+h2 {
   color: #61bdd4;
 }
 

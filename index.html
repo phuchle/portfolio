@@ -4,168 +4,313 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tyler Le - A Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" />
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-fixed-top" role="navigation">
-      <button
+  <body data-spy="scroll" data-target="#myNav">
+    <div id="myNav">
+      <nav class="navbar fixed-top  navbar-toggleable-md navbar-light bg-faded" role="navigation">
+        <button
         class="navbar-toggler navbar-toggler-right"
         type="button"
         data-toggle="collapse"
-        data-target="#myNavbar"
-        aria-controls="myNavbar"
+        data-target="#hamburger"
+        aria-controls="hamburger"
         aria-expanded="false"
         aria-label="Toggle navigation"
-      >
+        >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="/">Tyler Le</a>
+      <a class="navbar-brand" href="/">
+        <img class="portrait" src="img/me.jpg">
+        Tyler Le
+      </a>
 
       <!--  Collect items for collapse    -->
       <div
-        class="collapse navbar-collapse"
-        id="myNavbar"
+      class="collapse navbar-collapse"
+      id="hamburger"
       >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- collapse nav -->
-    </nav>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- collapse nav -->
+  </nav>
+    </div>
 
+      <div class="header">
+        <div class="cover"></div>
 
-    <div class="main-holder">
-      <div class="anchor" id="about">
-        <div class="row intro text-center">
-          <div class="col-md-12" id="intro-text">
-            <h1>Hello! My name is Phuc.</h1>
-            <h2>I am a web developer with a passion for intuitive and elegant engineering.</h2>
+        <div class="text-overlay">
+          <div class="intro text-center">
+            <h1>Hi, I'm Tyler.</h1>
+            <h1>I like making things with web tech.</h1>
           </div>
-          <div class="col-md-12">
-            <hr>
-            <img class="img-responsive center-block portrait" src="img/me.jpg">
+
+          <div class="see-work text-center">
+            <a href="#about">
+              <i class="fa fa-chevron-circle-down fa-3x"></i>
+            </a>
           </div>
+
         </div>
       </div>
 
-      <div class="text-center anchor" id="portfolio">
-        <h2>Portfolio</h2>
+      <div class="container" id="about">
         <div class="row">
-          <!-- Iota Phi -->
-          <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="http://www.iotaphi.org">
-                <figure>
-                  <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>Iota Phi Renovation</h3>
-                <p>
-                 I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap, Sass, Javascript, JQuery, PHP, and mySQL.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="http://dealer-bernice-71173.netlify.com/">
-                <figure>
-                  <img class="img-responsive" src="img/local_weather.png">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>What's the weather?</h3>
-                <p>
-                  Built with React and React Router, this weather single page application allows the user to enter a location and receive a five day forecast.  The location input field is a controlled component, wherein typing text into the field will cause a function to update the state.  On pressing the 'Get Weather' button, this state is then used to make an API call for the weather information.  The returning JSON string is parsed to display the relevant weather information and icons.
-                </p>
-              </div>
+          <div class="col-md-6 offset-md-3">
+            <h2 class="text-center">Skill Set</h2>
+            <div id="skillset">
+              <i
+                class="icon-html5 fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="HTML5"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-css3 fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="CSS3"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-nodejs fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="Javascript/Node"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-reactjs fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="React.js"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-bootstrap fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="Bootstrap"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-sass fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="Sass"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-ruby fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="Ruby"
+                data-trigger="hover"
+              ></i>
+              <i
+                class="icon-mongodb fa-2x"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="MongoDB"
+                data-trigger="hover"
+              ></i>
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="https://camper-leaderboard.firebaseapp.com/">
-                <figure>
-                  <img class="img-responsive" src="img/leaderboard.png">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>Leaderboard</h3>
-                <p>
-                  This app shows top scoring users from freecodecamp.com, an open source online web development course.  The users can be sorted by their all time points or their recent points (past 30 days). The API call is made with axios and then parsed into rows. The sort toggling is handled by the table headers, which call functions to render the corresponding data.
-                </p>
-              </div>
-            </div>
+            <h2 class="text-center">About Me</h2>
+            <p>
+              I am a software engineer based in San Jose with experience building applications from the ground up.
+            </p>
+            <p>
+              My current experience includes React and Redux on the front end and Node + Express + MongoDB for the back end.  I've also done some work with Ruby, PHP, mySQL, and WordPress. I'm quick to learn and work great as part of a team. If you need somebody hard-working, reliable, and can crack a good joke, I'm your guy.
+            </p>
+            <p>
+              I enjoy a good challenge; I love when something pushes me outside of my comfort zone and I am forced to adapt. This has been the method that I have used to learn and grow in my life. However, I do not want to go the path alone and I strive to help others in the journey to happiness--whether it be with a gentle hand or a firm push. I always appreciate when others do the same for me.
+            </p>
+            <p>
+              The higher the mountain, the better the view.
+            </p>
           </div>
-
           <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="https://recipeas-63c19.firebaseapp.com/">
-                <figure>
-                  <img class="img-responsive" src="img/recipeas.png">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>Recipeas</h3>
+            <h2 class="text-center">Experience</h2>
+            <ul class="work-history">
+              <li>
+                <h4>
+                  <i class="fa fa-code"></i>
+                  React.js Developer
+                </h4>
                 <p>
-                  Recipeas (pun intended) allows users to create, store, edit, and delete recipes without needing to connect to a server.  The application stores the data as a string in the browser's local storage.  Recipeas was created with Create-React-App and state is handled with Redux.  Upcoming features include a redesigned recipe creation flow and nutritional information for recipes.
-              </div>
-            </div>
+                  Stir App, August 2017 - Current
+                </p>
+                <p>
+                  As a part of the Stir web development team, I create new user-facing features using React.js.  I transform designs and wireframes into reusable and optimized components for a vast array of web-capable devices and browsers.
+                </p>
+              </li>
+              <li>
+                <h4>
+                  <i class="fa fa-code"></i>
+                  Web Developer
+                </h4>
+                <p>
+                  Alpha Phi Omega, December 2016 - March 2017
+                </p>
+                <p>
+                  IotaPhi.org is used by members to attend and track community service events and is built with PHP and has been integrated with WordPress.
+                </p>
+                <p>
+                  I designed a new theme and converted the table-based layout into the current mobile responsive website, where users have access to all features on desktop and mobile environments.
+                </p>
+                <p>
+                  On the back end, I added new event categories and a feature to allow multiple event creation from one page. Tracking events was made easier by auto-filling the users' hours and automatically calculating total hours. I also built a service to allow non-technical users to export statistics from the database to Excel format.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="https://phuchle.github.io/simon-game/">
-                <figure>
-                  <img class="img-responsive" src="img/simon.png">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>Simon</h3>
-                <p>
-                  Simon is a game where a pattern plays and the player has to enter the same pattern.  One additional color/sound combination is added to this pattern.  If a player can get to 20, they will win!  Strict mode forces the player to start over at 1 if they make a mistake entering the pattern.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="thumbnail text-left center-block">
-              <a href="https://phuchle.github.io/js-tictactoe/">
-                <figure>
-                  <img class="img-responsive" src="img/tictactoe.png">
-                </figure>
-              </a>
-              <div class="caption">
-                <h3>Smart Tictactoe</h3>
-                <p>
-                  This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="anchor text-center" id="contact">
+      <div class="container-fluid" id="portfolio">
+        <h2 class="text-center">Portfolio</h2>
+        <p>
+          test
+        </p>
+        <!-- <div class="row text-center anchor" >
+          <div class="col">
+            <h2>Portfolio</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="thumbnail text-left center-block">
+                  <a href="http://www.iotaphi.org">
+                    <figure>
+                      <img class="img-responsive" src="img/iotaphi.png" alt="Design of Iotaphi">
+                    </figure>
+                  </a>
+                  <div class="caption">
+                    <h3>Iota Phi Renovation</h3>
+                    <p>
+                      I worked with the president and members of the organization to rejuvenate the site with a responsive theme and add features to increase the site's functionality. Working with the legacy PHP code, I added new functionality to the backend and worked to reskin the Wordpress theme. I used custom HTML5/CSS3, as well as Bootstrap, Sass, Javascript, JQuery, PHP, and mySQL.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="thumbnail text-left center-block">
+                  <a href="http://dealer-bernice-71173.netlify.com/">
+                    <figure>
+                      <img class="img-responsive" src="img/local_weather.png">
+                    </figure>
+                  </a>
+                  <div class="caption">
+                    <h3>What's the weather?</h3>
+                    <p>
+                      Built with React and React Router, this weather single page application allows the user to enter a location and receive a five day forecast.  The location input field is a controlled component, wherein typing text into the field will cause a function to update the state.  On pressing the 'Get Weather' button, this state is then used to make an API call for the weather information.  The returning JSON string is parsed to display the relevant weather information and icons.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="thumbnail text-left center-block">
+                  <a href="https://camper-leaderboard.firebaseapp.com/">
+                    <figure>
+                      <img class="img-responsive" src="img/leaderboard.png">
+                    </figure>
+                  </a>
+                  <div class="caption">
+                    <h3>Leaderboard</h3>
+                    <p>
+                      This app shows top scoring users from freecodecamp.com, an open source online web development course.  The users can be sorted by their all time points or their recent points (past 30 days). The API call is made with axios and then parsed into rows. The sort toggling is handled by the table headers, which call functions to render the corresponding data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="thumbnail text-left center-block">
+                  <a href="https://recipeas-63c19.firebaseapp.com/">
+                    <figure>
+                      <img class="img-responsive" src="img/recipeas.png">
+                    </figure>
+                  </a>
+                  <div class="caption">
+                    <h3>Recipeas</h3>
+                    <p>
+                      Recipeas (pun intended) allows users to create, store, edit, and delete recipes without needing to connect to a server.  The application stores the data as a string in the browser's local storage.  Recipeas was created with Create-React-App and state is handled with Redux.  Upcoming features include a redesigned recipe creation flow and nutritional information for recipes.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="thumbnail text-left center-block">
+                    <a href="https://phuchle.github.io/simon-game/">
+                      <figure>
+                        <img class="img-responsive" src="img/simon.png">
+                      </figure>
+                    </a>
+                    <div class="caption">
+                      <h3>Simon</h3>
+                      <p>
+                        Simon is a game where a pattern plays and the player has to enter the same pattern.  One additional color/sound combination is added to this pattern.  If a player can get to 20, they will win!  Strict mode forces the player to start over at 1 if they make a mistake entering the pattern.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="thumbnail text-left center-block">
+                    <a href="https://phuchle.github.io/js-tictactoe/">
+                      <figure>
+                        <img class="img-responsive" src="img/tictactoe.png">
+                      </figure>
+                    </a>
+                    <div class="caption">
+                      <h3>Smart Tictactoe</h3>
+                      <p>
+                        This is the classic game of tictactoe, played against an unbeatable AI--it will either win or draw the game.  The AI uses a minimax function to recursively analyze all possible moves and end-game scenarios to determine the best move.  It also continues to make optimal plays even when it cannot win.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="text-center" id="contact">
         <h2>Contact Me</h2>
         <p>I am actively seeking employment and would love to chat via e-mail or social media.</p>
 
@@ -176,8 +321,6 @@
         </div>
       </div>
 
-
-    </div>
     <!-- main -->
 
     <div id="footer" class="text-center container-fluid">
@@ -185,13 +328,13 @@
         <a href="https://github.com/phuchle/portfolio">
           Design and code
         </a>
-        by Phuc Le
+        by Tyler Le
       </p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <!-- <script src="js/script.js" charset="utf-8"></script> -->
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
